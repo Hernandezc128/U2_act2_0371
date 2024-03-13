@@ -27,9 +27,12 @@ samples, guidance on mobile development, and a full API reference.
 ##Imagenes:
 
 ![image](https://github.com/Hernandezc128/p15-RouDise_0371/assets/143743758/3f33b13f-a513-4b84-9503-0432c44a80f9)
-![Uploading image.png…]()
-![Uploading image.png…]()
-![Uploading image.png…]()
+![image](https://github.com/Hernandezc128/p15-RouDise_0371/assets/143743758/c8d6aa4f-8f40-4da1-9f06-eef16456ac33)
+![image](https://github.com/Hernandezc128/p15-RouDise_0371/assets/143743758/b34ffd0e-a892-4223-bbb5-bba979166a15)
+
+![image](https://github.com/Hernandezc128/p15-RouDise_0371/assets/143743758/f6de3411-7a5b-4844-979b-40b744c0d972)
+
+
 
 
 
