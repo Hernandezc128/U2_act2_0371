@@ -1,5 +1,3 @@
-//Pantalla2_0371
-//
 import 'package:flutter/material.dart';
 
 class Pantalla2_0371 extends StatelessWidget {
@@ -9,18 +7,38 @@ class Pantalla2_0371 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Pantalla2  Hernandez0371"),
+        title: const Text("Pantalla2 Hernandez_0371"),
+        backgroundColor: Color(0xffff9a00),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-                onPressed: () {}, //si presiona boton
-                child: const Text("Pantalla"))
-          ],
+        child: Container(
+          color: Colors.green,
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 300,
+            maxWidth: 300,
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Icon(
+                  Icons.games_rounded,
+                  color: Colors.white,
+                  size: 50,
+                ),
+              ),
+              Center(
+                child: Text(
+                  'Carlos IVan hernandez 0371',
+                  style: TextStyle(fontSize: 30, color: Colors.white),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
-  } //fin de Widget
-} //fin de clase Pantalla2_0371
+  }
+}
