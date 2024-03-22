@@ -8,35 +8,48 @@ class Pantalla1_0371 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Pantalla1 Hernandez_0371"),
-        backgroundColor: Color(0xff6dfff4),
+        backgroundColor: const Color(0xff6dfff4),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            color: Color(0xfff2c83d),
-            width: 300,
-            height: 300,
-            padding: EdgeInsets.all(32),
-            margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-            alignment: Alignment.center,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.games_outlined, // Puedes cambiar el icono aquí
-                  size: 50,
-                  color: Color(0xff691afd),
-                ),
-                SizedBox(height: 10), // Espacio entre el icono y el texto
-                Text(
-                  'Carlso Ivan Hernandez 0371',
-                  style: TextStyle(fontSize: 30, color: Color(0xffffffff)),
-                ),
-              ],
+      body: Center(
+        child: Column(
+          // Corrección aquí
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              "Carlos Ivan Hernandez Monroy",
+              style: TextStyle(fontSize: 20),
             ),
-          ),
-        ],
+            Align(
+              alignment: Alignment.topCenter,
+              child: Container(
+                margin: const EdgeInsets.only(top: 20),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Color(0xff961ff6),
+                    width: 10,
+                  ),
+                ),
+                width: 280,
+                height: 280,
+                alignment: Alignment.center,
+                child: const Text(
+                  'H',
+                  style: TextStyle(
+                    fontSize: 180,
+                    color: Color(0xff961ff6),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              child: Text(
+                "Atterizaje Mat. 21308051280371",
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

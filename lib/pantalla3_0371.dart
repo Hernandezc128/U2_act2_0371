@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
 class Pantalla3_0371 extends StatelessWidget {
   const Pantalla3_0371({Key? key}) : super(key: key);
@@ -9,23 +8,47 @@ class Pantalla3_0371 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Pantalla3 Hernandez_0371"),
-        backgroundColor: Color(0xff43ff62),
+        backgroundColor: Color(0xff00b8ff),
       ),
-      body: Center(
-        child: Container(
-          color: Color(0xcc873bff),
-          width: 300,
-          height: 300,
-
-          transform:
-              Matrix4.rotationZ((math.pi / 180) * 20), // Corregido el ángulo
-          child: Center(
-            child: Text(
-              "Carlos Ivan 0371",
-              style: TextStyle(fontSize: 30, color: Color(0xffffffff)),
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.all(40),
+            width: 300,
+            height: 90,
+            alignment: Alignment.centerLeft,
+            decoration: BoxDecoration(
+              color: Color(0xff994dfb), //blue
+              borderRadius: BorderRadius.circular(45),
+            ),
+            child: Container(
+              width: 210,
+              height: 90,
+              decoration: BoxDecoration(
+                color: Color(0xffa794f9), //light blue
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(45),
+                  bottomLeft: Radius.circular(45),
+                ),
+              ),
+              alignment: Alignment.center,
+              child: Text(
+                'Challenge',
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
-        ),
+          Text("Hernandez Monroy Carlos Ivan", style: TextStyle(fontSize: 30)),
+          Container(
+            child: Text(
+              "FIgura Con texto Mat.21308051280371",
+              style: TextStyle(fontSize: 20),
+            ),
+          )
+        ],
       ),
     );
   }

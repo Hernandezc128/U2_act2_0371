@@ -7,37 +7,51 @@ class Pantalla2_0371 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Pantalla2 Hernandez_0371"),
-        backgroundColor: Color(0xffff9a00),
-      ),
-      body: Center(
-        child: Container(
-          color: Colors.green,
-          constraints: BoxConstraints(
-            minHeight: 100,
-            minWidth: 200,
-            maxHeight: 300,
-            maxWidth: 300,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Center(
-                child: Icon(
-                  Icons.games_rounded,
-                  color: Colors.white,
-                  size: 50,
-                ),
-              ),
-              Center(
-                child: Text(
-                  'Carlos IVan hernandez 0371',
-                  style: TextStyle(fontSize: 30, color: Colors.white),
-                ),
-              )
-            ],
-          ),
+        title: const Text(
+          "Pantalla2 Hernandez_0371",
+          style: TextStyle(color: Colors.white),
         ),
+        backgroundColor: const Color(0xff0270ff),
+      ),
+      body: Column(
+        children: [
+          Container(
+            height: 130,
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              color: Color(0xff5025ef),
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(50),
+                bottomLeft: Radius.circular(50),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Color(0xff8f48ff),
+                  offset: Offset(9, 9),
+                  blurRadius: 6,
+                ),
+              ],
+            ),
+            alignment: Alignment.center,
+            child: const Text(
+              'I am a header',
+              style: TextStyle(
+                fontSize: 38,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          const Text(
+            "Carlos Ivan Hernandez Monroy",
+            style: TextStyle(fontSize: 30),
+          ),
+          Container(
+            child: const Text(
+              "Encabezado Mat.21308051280371",
+              style: TextStyle(fontSize: 20),
+            ),
+          )
+        ],
       ),
     );
   }
